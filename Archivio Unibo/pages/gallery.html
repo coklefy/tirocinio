@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <title>Archivio UniBo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="style-gallery/gallery.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
+  <script src="../layout/scripts/jquery.min.js"></script>
+  <script src="../layout/scripts/jquery.backtotop.js"></script>
+  <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+    <div id="container">
+      <!-- ################################################################################################ -->
+          <img id="logo-img" src="../images/demo/logo-unibo.jpg" alt="logo">
+          <span id="alma">Alma Mater Studiorum </span>
+          <span id="università">Università di Bologna</span>
+     </div>
+    </div>
+  </div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left">
+      <!-- ################################################################################################ -->
+      <h1><a href="../index.html" style="text-decoration:none">Archivio</a></h1>
+      <!-- ################################################################################################ -->
+    </div>
+    <nav id="mainav" class="fl_right">
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li><a href="../index.html" style="text-decoration:none">Home</a></li>
+        <li><a class="" href="" style="text-decoration:none">Galleria</a>
+        </li>
+        </li>
+        <li><a class="" href="#">Statistiche</a>
+      </ul>
+      <!-- ################################################################################################ -->
+    </nav>
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div id="cover-gallery" class="wrapper bgded overlay" style="background-image:url('../images/cover-archivio3.jpg');">
+  <div id="breadcrumb" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <ul>
+      <li ><a href="../index.html">Home</a></li>
+      <li><a href="gallery.html">Galleria</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content">
+      <!-- ########### iL container del search e dei filtri #################################### -->
+      <div class="row" id="search">
+           <form id="search-form" action="" method="POST" enctype="multipart/form-data">
+        			<div class="form-group col-xs-9">
+        				<input class="form-control" type="text" placeholder="Search by name / surname / degree" />
+        			</div>
+        			<div class="form-group col-xs-3">
+        				<button id="button-search" type="submit" class="btn btn-block btn-primary" style="background:#770000">Search</button>
+        			</div>
+        	</form>
+      </div>
+
+      <div class="row" id="filters">
+        <form>
+            <div class="form-group col-sm-3 col-xs-6">
+                  <select data-filter="degree" class="filter-degree filter form-control">
+                         <option value="" disabled selected>Laura Conferita</option>
+                          <option value="">Show All</option>
+                  </select>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+                  <select data-filter="structure" class="filter-structure filter form-control">
+                         <option value="" disabled selected>Struttura</option>
+                         <option value="">Show All</option>
+                  </select>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+                 <select data-filter="year" class="filter-year filter form-control">
+                        <option value="" disabled selected>Anno di laurea</option>
+                        <option value="">Show All</option>
+                 </select>
+           </div>
+           <div class="form-group col-sm-3 col-xs-6" style="width:12%;">
+                <select class="sort-date  sort-icon form-control">
+                       <option value="" disabled selected> &#xf0ca;   Data</option>
+                       <option value="asc">Data ASC</option>
+                       <option value="dsc">Data DSC</option>
+                       <option value="none">None</option>
+                </select>
+          </div>
+          <div class="form-group col-sm-3 col-xs-6 " style="width:12%;">
+                <select class="sort-name sort-icon form-control" >
+                      <option value="" disabled selected>&#xf0ca;   Nome</option>
+                      <option value="ascn">A-Z</option>
+                      <option value="dscn">Z-A</option>
+                      <option value="none">None</option>
+               </select>
+         </div>
+        </form>
+	    </div>
+    </div>
+
+      <!-- Inizio della galleria -->
+      <div class="row">
+      <div id="students">
+      </div>
+
+  </div>
+  <div  id="">
+    <p id="pagination-here"></p>
+  </div>
+</div>
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2019 - Tirocinio: Lauree Honoris Causa</p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script type="text/javascript" src="http://oss.sheetjs.com/js-xlsx/xlsx.full.min.js"></script>
+<script  src="scripts/upload-data.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Css file to edit the gallery page. The container and the data row */
+.container-student {
+	margin-bottom: 30px;
+  position: relative;
+  padding: 10px;
+  margin: 2%;
+  background-color: #ECEFF1;
+  width: 29.33%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.svg-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #670000;
+  -webkit-clip-path: polygon(0 0, 14% 0, 48% 100%, 0% 100%);
+  clip-path: polygon(0 0, 14% 0, 30% 100%, 14% 100%);
+}
+
+.profile-img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: -10px;
+  border-radius: 50%;
+}
+
+.text-container {
+  position: relative;
+	float: right;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  max-width: 50%;
+  text-align: left;
+}
+
+.id-text, .degree-text, .structure-text{
+  color: #263238;
+	font-family: Opensans,Verdana,Geneva,Tahoma,sans-serif;
+  font-size: 14px;
+	font-weight: 600;
+}
+
+.name-surname-text{
+	color: #700;
+	font-family:ProximaNova,Opensans,Verdana,Geneva,Tahoma,sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+
+/* Media queries */
+@media (max-width: 1200px){ .col-sm-4 {width: 40.33333333%;} .container-student{ margin: 45px;}}
+@media (max-width: 1000px){ .container-student{margin: 20px;}}
+@media (max-width: 950px) { .col-sm-4 {width: 42%;}}
+@media (max-width: 780px) { .col-sm-4 {width: 90%;} 	.text-container{ width: 200px; margin-right: 50px;}
+}
+
+@media (max-width: 500px) {
+	.container-student{
+		height: 250px;
+	}
+
+	.profile-img{
+		position: relative;
+		margin-left: 2%;
+		margin-top: 20px;
+		width: 100px;
+		height: 100px;
+	}
+
+	.text-container{
+		position: relative;
+		float: right;
+		margin-top: 130px;
+		margin-right: 7%;
+		font-size: 14px;
+		height: 250px;
+		width: 100%;;
+		margin-top: 50px;
+		padding: 0;
+		font-size: 14px;
+	}
+
+	.name-surname-text{
+		width: 200px;
+		color: white;
+		margin-bottom: 25px;
+		font-size: 14px;
+	}
+
+	.svg-background {
+		-webkit-clip-path:  polygon(0 20%, 100% 20%, 100% 45%, 0 45%);
+		clip-path: polygon(0 20%, 100% 20%, 100% 35%, 0 35%);
+	}
+}
+
+.pagination>li>a{
+	background-color: #fff;
+	border-color: ##BB80A0;
+}
+.pagination>.active>a, .pagination>.active>a:hover,.pagination>.active>a:focus, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #770000 !important;
+    border-color: #BB80A0;
+}
+
+.btn{
+	padding: 8px 3px 10px !important;
+}
+
+.sort-icon {
+  font-family: 'FontAwesome', 'sans-serif' !important;
+}
+
+.sort {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+		/* width: 20px !important; */
+}
